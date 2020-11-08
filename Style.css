@@ -1,88 +1,87 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
+*{ /*Comando "*" é para referênciar a toda a página sem discriminar uma ID ou class, nesse momento vamos zerar algumas concfigurações*/
+    padding: 0; /*Zerando o padding*/
+    margin: 0; /*Zerando a margem*/
+    box-sizing: border-box; /*Ferramenta utilizada para somar padding e border mas não o margin*/
+    text-decoration: none; /*Usado para tirar formatação do texto, útil para tirar a formatação do hyperlink*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*Família de fontes que eu decidi utilizar*/
+    font-size: 14px; /*Tamanho da fonte utilizado*/
 }
 body {
-    width: 100%;
+    width: 100%; /*Largura definida para todo o conúdo dentro do body*/
     /*min-height: 100vh;*/
-    background-color: rgb(243, 243, 243);
-    margin: auto;
-    padding: 0;
-    display: flex;
-    align-content:center;
-    justify-content: center;
-    border-radius: 2px;
+    background-color: rgb(243, 243, 243); /*cor do fundo utilizada para toda a página*/
+    margin: auto; /*definido margem como automático*/
+    padding: 0; /*padding padrão zerado*/
+    display: flex; /*para se comportar com um bloco*/
+    align-content:center; /*alinhamento no eixo Y centralizado*/
+    justify-content: center; /* alinhamento no eixo X centralizado*/
+    /*border-radius: 2px;*/
 }
-.instagram-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 50rem;
-    height: 100vh;
+.instagram-wrapper { /*definições quanto a primeira coluna - Imagem do Celular*/
+    display: flex; /*para se comportar com um bloco*/
+    align-items: center; /*alinhamento no eixo Y centralizado*/
+    justify-content: space-between; /*alinhamento no eixo X - atributo focado em separar igualmente o espaço entre os componentes no eixo principal*/
+    width: 50rem;/*largura da coluna 50rem*/
+    height: 100vh; /* altura da coluna 100vh*/
 }
-.instagram-phone {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    padding: 2rem;
+.instagram-phone {/*definições quanto o posicionamento da classe*/
+    display: flex; /*para se comportar com um bloco*/
+    align-items: center; /*alinhamento no eixo Y centralizado*/
+    justify-content: center; /*alinhamento no eixo Y centralizado*/
+    overflow: hidden; /* usado para esconder o restante da imagem não pertinente*/
+    /*padding: 2rem;*/
 }
-.instagram-phone img {
-    height: 50rem;
-    width: 55rem;
+.instagram-phone img {/*configuração pertinente a imagem*/
+    height: 50rem; /*altura da imagem*/
+    width: 55rem; /*largura da imagem*/
 } 
-.instagram-continue {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    min-height: 3rem;
+.instagram-continue {/*configuração da segunda coluna*/
+    display: flex; /*para se comportar com um bloco*/
+    align-items: center; /*alinhamento no eixo Y centralizado*/
+    justify-content: center; /*alinhamento no eixo Y centralizado*/
+    flex-direction: column; /*altera a direção de referência - por padrão é o X agora é Y*/
+    width: 100%; /*largura da segunda coluna*/
+    /*min-height: 3rem;*/ /*altura mínima da coluna*/
 }
-.group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #ffffff;
-    width: 25rem;
-    /*max-block-size: 30rem;*/
-    padding: 2rem 0;
-    margin-bottom: 1rem;
-    border: 1px solid lightgray;
-    border-radius: 20px;
+.group {/*configuração das caixas brancas*/
+    display: flex; /*para se comportar com um bloco*/
+    justify-content: center; /*alinhamento no eixo Y centralizado*/
+    align-items: center; /*alinhamento no eixo Y centralizado*/
+    flex-direction: column; /*altera a direção de referência - por padrão é o X agora é Y*/
+    background-color: #ffffff; /*definição da cor de fundo das caixas*/
+    width: 25rem; /*definição da largura das caixas*/
+    /*max-block-size: 30rem;*/ /*definição do tamanho máximo da caixa quando a tela é expandida*/
+    padding: 1rem 0; /*definição do padding*/
+    margin-bottom: 1rem; /*definição da margem na parte inferior - tentativa de afastar as duas caixas*/
+    border: 1px solid lightgray; /*definição da cor da borda, do tipo de borda e da expessura*/
+    border-radius: 20px; /*definição de um raio para a borda das caixas*/
 }
 .group:nth-child(1){
-    min-height: 19rem;
+    min-height: 19rem; /*definição de uma altura mínima*/
 }
-.Logo_Instagram{
-    height: 6rem;
+.Logo_Instagram{/*definição da classe referente ao logo*/
+    height: 6rem; /*altura aplicada*/
 }
-.profile-photo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+.profile-photo { /*definição foto do perfil*/
+    display: flex; /*para se comportar com um bloco*/
+    justify-content: center; /*alinhamento no eixo Y centralizado*/
+    align-items: center; /*alinhamento no eixo Y centralizado*/
+   /*overflow: hidden;*//* usado para esconder o restante da imagem não pertinente*/
 }
-.profile-photo img{ 
-   
-    border-radius: 50%;
-    margin-bottom: 2rem;
-    height: 6rem; 
+.profile-photo img{ /*definição da foto de perfil*/
+    border-radius: 50%; /*deixa a foto redonda*/
+    margin-bottom: 0.5rem; /*definição de margem para a parte inferior*/
+    height: 8rem; /*altura para a imagem*/
 }
-.instagram-login{
-    background-color: #0095f6;
-    color:#ffffff;
-    padding: 8px;
-    border-radius: 4px;
+.instagram-login{/*definição do texto de login*/
+    background-color: #0095f6; /*definição do fundo do texto*/
+    color:#ffffff;/*definição da cor do texto*/
+    padding: 8px; /*distânciamento para opróximo elemento*/
+    border-radius: 4px; /*arredondamento da borda*/
 }
-.instagram-logout{
-    color: #0095f6;
-    margin-top: 1rem;
+.instagram-logout{/*definição do texto de logout*/
+    color: #0095f6;/*cor do texto*/
+    margin-top: 1rem; /*definiçaõ de margem na parte superior*/
 }
 .not-account{
     color:rgb(160,160,160);
