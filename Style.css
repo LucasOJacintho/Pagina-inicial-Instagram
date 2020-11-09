@@ -10,7 +10,7 @@ body {
     width: 100%; /*Largura definida para todo o conúdo dentro do body*/
     /*min-height: 100vh;*/
     background-color: rgb(243, 243, 243); /*cor do fundo utilizada para toda a página*/
-    margin: auto; /*definido margem como automático*/
+   /* margin: auto; /*definido margem como automático*/
     padding: 0; /*padding padrão zerado*/
     display: flex; /*para se comportar com um bloco*/
     align-content:center; /*alinhamento no eixo Y centralizado*/
@@ -27,7 +27,7 @@ body {
 .instagram-phone {/*definições quanto o posicionamento da classe*/
     display: flex; /*para se comportar com um bloco*/
     align-items: center; /*alinhamento no eixo Y centralizado*/
-    justify-content: center; /*alinhamento no eixo Y centralizado*/
+    justify-content: center; /*alinhamento no eixo X centralizado*/
     overflow: hidden; /* usado para esconder o restante da imagem não pertinente*/
     /*padding: 2rem;*/
 }
@@ -38,9 +38,10 @@ body {
 .instagram-continue {/*configuração da segunda coluna*/
     display: flex; /*para se comportar com um bloco*/
     align-items: center; /*alinhamento no eixo Y centralizado*/
-    justify-content: center; /*alinhamento no eixo Y centralizado*/
+    justify-content: center; /*alinhamento no eixo X centralizado*/
     flex-direction: column; /*altera a direção de referência - por padrão é o X agora é Y*/
     width: 100%; /*largura da segunda coluna*/
+    padding-top: 0.5in;
     /*min-height: 3rem;*/ /*altura mínima da coluna*/
 }
 .group {/*configuração das caixas brancas*/
@@ -54,7 +55,7 @@ body {
     padding: 1rem 0; /*definição do padding*/
     margin-bottom: 1rem; /*definição da margem na parte inferior - tentativa de afastar as duas caixas*/
     border: 1px solid lightgray; /*definição da cor da borda, do tipo de borda e da expessura*/
-    border-radius: 20px; /*definição de um raio para a borda das caixas*/
+    border-radius: 10px; /*definição de um raio para a borda das caixas*/
 }
 .group:nth-child(1){
     min-height: 19rem; /*definição de uma altura mínima*/
@@ -94,7 +95,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 25rem;
     padding: 1.3rem 0;
 }
 .download {
@@ -112,7 +113,6 @@ body {
 .app-download:nth-child(1) {
     background-image: url('./Imagens/Apple-Buttom.png');
     border-radius: 10px;
-    
 }
 .app-download:nth-child(2) {
     background-image: url('./Imagens/Google-Play.png');
